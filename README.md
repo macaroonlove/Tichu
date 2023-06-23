@@ -1,23 +1,54 @@
 # Tichu
-두 명씩 팀을 이루어 정해진 족보에 맞는 카드를 사용하여 승리를 쟁취하는 전략게임
+
+|제목|내용|
+|:---:|:---:|
+|기간|2022.06.26 ~ 2022.08.31|
+|인원|1|
+|역할|모든 작업|
+|주제|두 명씩 팀을 이루어 정해진 족보에 맞는 카드를 사용하여 승리를 쟁취하는 전략게임|
 
 ## 인트로 화면
-![image](https://user-images.githubusercontent.com/87137181/221134226-879a374d-4d65-4b19-b8e7-911eba762860.png)
+![인트로GIF](./Git_Image/1.gif)
 
 ## 게임 룰
-![image](https://user-images.githubusercontent.com/87137181/221134556-6cf0230c-0684-4367-b3ab-5437f2cce84c.png)
+![Image](./Git_Image/2.png)
 
-## 로비 (방 조회)
-![image](https://user-images.githubusercontent.com/87137181/221134770-8b1c8f7c-0a48-4d22-a60f-1eeaf4d6b9f4.png)
+## 로비 - 방 생성 및 조회
+![Image](./Git_Image/3.png)
 
-## 방 생성
-![image](https://user-images.githubusercontent.com/87137181/221134899-b09f8e09-5b6f-4ae4-a0b2-eeb1d2cc00f1.png)
-
-## 방 내부
-![image](https://user-images.githubusercontent.com/87137181/221135022-50a035fb-854b-4131-949b-2d809653d50a.png)
+## 대기실 - 준비 및 시작
+![Image](./Git_Image/4.png)
 
 ## 게임 시작 인트로 화면
-![image](https://user-images.githubusercontent.com/87137181/221135810-f6017331-52ed-4689-9d45-33bfc00dc0f4.png)
+![Image](./Git_Image/5.png)
 
-## 플레이 중 화면
-![image](https://user-images.githubusercontent.com/87137181/221136096-c122ec55-8e9f-4cf9-b2f4-5a73317956dd.png)
+## 플레이
+### 라지티츄
+![Image](./Git_Image/6.png)
+
+### 카드 분배
+![Image](./Git_Image/7.png)
+
+### 족보
+![Image](./Git_Image/8.png)
+
+### 특수카드
+#### 현무
+시작카드
+스트레이트 시, 1로 사용될 수 있다.
+소원을 통해 다음 차례의 상대의 카드를 강제 추출할 수 있다.
+![Image](./Git_Image/9.png)
+
+#### 백호
+건너편의 우리팀에게 차례를 넘겨준다.
+우리팀이 끝났을 경우, 우리팀 다음 차례의 적팀이 차례를 가진다.
+![Image](./Git_Image/10.png)
+
+#### 주작
+족보에 맞는 어떤 카드로든 사용이 가능하다.
+싱글로 사용할 경우, 테이블의 카드에 +0.5점을 취한다.
+![Image](./Git_Image/11.png)
+
+#### 청룡
+싱글 카드 중 최강!
+![Image](./Git_Image/12.png)
