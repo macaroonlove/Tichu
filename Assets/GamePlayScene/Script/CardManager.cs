@@ -1151,8 +1151,18 @@ public class CardManager : MonoBehaviourPunCallbacks, IPunObservable
                     if (handCard[i].gameObject.GetComponent<Card>().SCard) // 선택된 카드들을 hopeList에 추가
                         hopeList.Add(handCard[i].sprite.name[2..]);
 
-                if(!hopeList.Contains(hopeString)) // hopeList에 현무가 원하는 카드가 포함되어 있지 않다면 ( +추가 되어야할 것: 테이블의 카드가 스트레이트의 경우 낼 수 없다면 패스가 가능하게 )
-                    wantHyunMoo = false;
+                if (!hopeList.Contains(hopeString)) // hopeList에 현무가 원하는 카드가 포함되어 있지 않다면 ( +추가 되어야할 것: 테이블의 카드가 스트레이트의 경우 낼 수 없다면 패스가 가능하게 )
+                {
+                    if (int.Parse(currentTableCardText.text) > int.Parse(hopeString))
+                    {
+                        haveHope = false;
+                        wantHyunMoo = true;
+                    }
+                    else
+                    {
+                        wantHyunMoo = false;
+                    }
+                }
 
                 //if (currentTableCardText.text.Contains("스트레이트"))
                 //{
@@ -1207,7 +1217,6 @@ public class CardManager : MonoBehaviourPunCallbacks, IPunObservable
     {
         doTurn = true;
         yield return new WaitForSeconds(1f);
-        Debug.Log("실행");
         tableCard[7].enabled = false;
         currentTableCardTextBackGroundImage.color = new Color(1, 1, 1, 0);
         currentTableCardText.text = "";
